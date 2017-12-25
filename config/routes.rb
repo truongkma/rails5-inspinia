@@ -1,6 +1,4 @@
-Myapp::Application.routes.draw do
-
-  # You can have the root of your site routed with "root"
+Rails.application.routes.draw do
   root to: 'dashboards#dashboard_1'
 
   # All routes
@@ -10,7 +8,6 @@ Myapp::Application.routes.draw do
   get "dashboards/dashboard_4"
   get "dashboards/dashboard_4_1"
   get "dashboards/dashboard_5"
-
   get "layoutsoptions/index"
   get "layoutsoptions/off_canvas"
 
@@ -140,5 +137,5 @@ Myapp::Application.routes.draw do
   get "cssanimations/index"
 
   get "landing/index"
-
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
